@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
+.main {
+    width: 100%;
+    background: #deecec;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+    padding-top: 5px;
+
+}
+/*ROSE*/
+.main h1{
+    font-family: 'Courier New';
+     margin-top: 10px;
+    margin-left: 5px;
+   
+}
+
+.navbar{ 
+    background-color: rgb(197, 57, 57);
+    width: 100%;
+    padding: none;
+    display: flex;
+    position: fixed;
+    z-index: 1999999;
+    margin-top: 0px;
+    /* margin-left: 25px; */
+    /* margin-right: 25px; */
+    align-items: center;
+    justify-content: space-between;
+     top: 0;
+     font-family: 'Courier New';
+}
+.navbar h1{/*ROSE NAV */
+    color: black;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 27px;
+    font-weight: 800;
+
+}
+ul {
+    margin-top: 5px;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 8px;
+   margin-bottom: 5px;
+   
+   
+}
+
+ul li {
+    list-style: none;
+    display: block;
+    padding: 10px 16px;
+    margin-right: 90px;
+}
+
+/* *****************************************************************NAV START******************************************************/
+ul li a {
+
+    font-weight: bolder;
+    font-family: 'Courier New';
+    margin-top: 5px;
+    position: relative;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: rgb(17, 18, 20);
+    transition: width 0.5s ease-in-out;
+    -webkit-transition: width 0.5s ease-in-out;
+}
+
+ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+ul li a:hover {
+  
+    transition: color 0.5s ease-in-out;
+}
+/* *****************************************************************NAV END******************************************************/
+.info{
+    margin-left: 7%;
+    margin-top: 10%;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+.info h1 {
+    font-size: 60px;
+    color: black;
+    animation: bounce 1.8s infinite; 
+}
+
+
+
+.info h2{
+    
+    color: black;
+}
+
+.info h3{
+    font-size: 18px;
+    font-family: 'Courier New';
+    line-height: 24px;
+    color: black;
+}
+
+.info span{
+    color: rgb(199, 24, 24);
+    font-family: 'Staatliches';
+}
+
+.info a{
+    text-decoration:  none;
+    color: rgb(238, 238, 184);
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background:rgb(223, 28, 28);
+}
+
+.image{
+    width: 25%;
+    height: 80%;
+    position: absolute;
+    right: 100px;
+    bottom: 5px;
+}
+/*samppic3*/
+
+.image img {
+    width: 170%;
+    height: 90%;
+    position: relative;
+    right: 70%;
+    bottom: 5%;
+    filter: brightness(.8) contrast(2);
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 5));
+
+    transition: transform 0.3s ease, filter 0.3s ease;        
+    border-radius: 3rem;
+}
+
+.image img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+   
+}
+
+
+.icons a {
+    text-decoration: none;
+    color: black;
+
+    
+}
+
+
+.icons ion-icon {
+    margin-left: 7%;
+    color: rgb(228, 61, 49);
+    margin-right: -60px;
+    font-size: 40px;
+    transition: 0.4s ease; 
+    
+}
+
+.icons ion-icon:hover {
+    color: rgb(238, 238, 184);
+
+        transform: scale(1.2); 
+    box-shadow: 0 0 2px #fa2407, 0 0 10px #e73838, 0 0 10px #ec1010;
+}
+
+
+/* *****************************************************************ABOUT START******************************************************/
+
+
+#about {
+    scroll-margin-block-start: 70px;
+    width: 100%;
+    height: 100vh;
+    background: #deecec;
+    padding-top: 1px; 
+    background-size: cover; 
+   
+   
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+
+   
+    width: 120%;
+margin-right: 0;
+ 
+    
+}
+
+.about-col-1 {
+    flex-basis: 25%;
+   
+}
+
+.about-col-1 img {
+    width: 160%; 
+    height: 90%; 
+    position: relative; 
+    
+    right: 70%; 
+    bottom: 30%; 
+    filter: brightness(1) contrast(1.5);
+    border-radius: 20%;
+    border-bottom-left-radius:40%;
+    
+}
+
+.about-col-2 {
+    flex-basis: 50%;
+    margin-top: 1px;
+    margin-right: 15%;
+    
+}
+
+.title {
+    font-size: 35px;
+    font-family: 'Courier New';
+    font-weight: 600;
+    color: rgb(199, 24, 24);
+}
+
+.sub {
+    color: black;
+    font-size: 18px;
+    font-family:  courier new;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* *****************************************************************ABOUT END******************************************************/
+/* *****************************************************************EDUCATION START************************************************/
+.education-wrapper {
+    margin-top: 30%;
+    
+   
+}
+
+
+.education-list {
+  
+    color: black;
+    margin-top: 15px;
+    margin-right: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #deecec;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5), 
+    15px 15px 15px rgba(49, 45, 45, 0.5);
+    padding: 1rem;
+
+    transition: transform 0.3s ease, filter 0.3s ease;          
+    border-radius: 1rem;
+}
+
+.education-list:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+   
+}
+
+.education-list .yearone {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8%;
+    width: 100px; 
+    
+    text-align: center; 
+    background-color: rgb(197, 57, 57);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+.education-list .schoolone {
+    font-size: 18px;
+    font-weight: bold;
+  
+    width: 300px;
+    padding: 4%;
+    text-align: center; 
+    background-color: rgb(197, 57, 57);
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.education-list .yeartwo {
+    font-size: 18px;
+    font-weight: bold;
+    
+    padding: 8%;
+    width: 100px; 
+   
+    text-align: center; 
+    background-color: rgb(197, 57, 57);
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.education-list .schooltwo {
+    font-size: 18px;
+    font-weight: bold;
+  
+    width: 300px; 
+    padding: 4%;
+    text-align: center; 
+    background-color: rgb(197, 57, 57);
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+.education-list .yearthree {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8%;
+    width: 100px; 
+    
+    text-align: center; 
+    background-color: rgb(197, 57, 57);
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.education-list .schoolthree {
+    font-size: 18px;
+    font-weight: bold;
+  
+    width: 300px; 
+    padding: 4%; 
+    text-align: center; 
+    background-color: rgb(197, 57, 57);/*  background color smallbox */
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+.education-list li {
+    font-size: 18px;
+    font-family: 'Courier New';
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+    padding-right: 1rem;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+
+
+.education-list li:hover {
+    background: #e73838; 
+  
+}
+
+.attainment{
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: 'Courier New';
+    font-weight: bolder;
+    color: rgb(199, 24, 24);
+}
+/* *****************************************************************EDUCATION END******************************************************/
+/* *****************************************************************SERVICE START******************************************************/
+
+
+
+
+#services {
+    scroll-margin-block-start: 70px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #deecec;
+    padding:20px 0;
+    font-family: 'Courier New';
+    font-weight: 600;
+}
+/* STARTNAVSERVICES */
+.navbar1{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    /* padding: 10px 0; */
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+ul {
+    margin-top: 5px;
+    font-size: 25px;
+   
+    padding: 3px;
+    border-radius: 8px;
+   
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+    margin-right: 90px;
+}
+
+/* *********/
+ul li a {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Courier New';
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    position: relative;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: rgb(17, 18, 20);
+    transition: width 0.5s ease-in-out;
+    -webkit-transition: width 0.5s ease-in-out;
+}
+
+ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+ul li a:hover {
+  
+    transition: color 0.5s ease-in-out;
+}
+
+/* ENDNAVSERVICES */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 45px; 
+    font-family: 'Courier New';
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color:   rgb(197, 57, 57);; 
+    text-transform: uppercase; 
+    letter-spacing: 0.1px;
+    position: relative;
+}
+
+.section-title::after {/* Line  */
+    content: '';
+    width: 170px;
+    height: 4px;
+    background: black; 
+    display: block;
+    margin: 5px auto 0;
+}
+
+.section-subtitle { 
+    font-size: 20px;
+    font-weight: bold;
+    color:  rgb(197, 57, 57);
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap:50px; /* Addedgap for spacing between cards */
+    margin-top: 2%;
+    margin-bottom: 20%;
+    width: 110%;
+}
+
+.service-card {
+    background: rgb(190, 13, 13);/* smallbox background color  */
+    padding: 3px; 
+    border-radius: 15px;
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px); 
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, background 0.3s ease; 
+}
+
+.service-card:hover {
+    background: rgb(223, 28, 28); 
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.service-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon img {
+    transform: rotate(360deg); 
+}
+
+.service-title {
+    font-size: 26px; 
+    margin-bottom: 10px;
+    color: black; 
+}
+
+.service-description {
+    font-size: 18px; 
+    color: black; 
+    opacity: 0.9; 
+}
+
+/*SERVICES END*/
+
+/* *****************************************************************CONTACT START******************************************************/
+
+
+#contact {/*  main bg */
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #deecec;
+    padding: 50px 0;
+}
+
+
+.contact .container { /*  smallbox */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    background-color: rgb(197, 57, 57);/*  background color */
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, background 0.3s ease; 
+}
+
+.contact .container:hover {
+    background: rgb(223, 28, 28); 
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.contact .title {
+    font-size: 45px; 
+    font-family: 'Courier New';
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: black;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    position: relative;
+}
+
+    
+
+.contact .sub {
+    color: black;
+    font-size: 20px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    line-height: 1.6; /* line height */
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2); /* Scale effect on hover */
+}
+
+.contact-icons ion-icon {
+    font-size: 40px;
+    transition: 0.4s ease;
+}
+
+.contact-icons ion-icon:hover {
+    color: rgb(222, 223, 236);
+    box-shadow: 0 0 10px rgb(201, 205, 245), 0 0 20px rgb(194, 198, 236), 0 0 30px rgb(198, 202, 240);
+}
+
+/* *****************************************************************CONTACT END******************************************************/
